@@ -63,6 +63,7 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  overflow: visible;
 }
 
 .activity-card h4 {
@@ -72,6 +73,61 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card .participants {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.participants-list {
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+.participants-list li {
+  margin-bottom: 8px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+}
+
+.participants-list span {
+  flex-grow: 1;
+}
+
+.delete-participant {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  transition: background-color 0.2s;
+}
+
+.delete-participant:hover {
+  background-color: #ff5252;
+}
+
+.no-participants {
+  margin-top: 8px;
+  color: #777;
+  font-style: italic;
 }
 
 .form-group {
@@ -112,6 +168,7 @@ button:hover {
   margin-top: 20px;
   padding: 10px;
   border-radius: 4px;
+  word-break: break-word;
 }
 
 .success {
